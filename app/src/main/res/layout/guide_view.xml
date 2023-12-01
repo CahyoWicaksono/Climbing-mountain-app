@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_detail_guide"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView_detail_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/equipment">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/place_name_detail_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/poppins"
+            android:text="Equipment Guide"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_name_detail_guide"
+            android:background="@drawable/bg_detail">
+
+            <TextView
+                android:id="@+id/title_mountain_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/desc_detail_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_mountain_guide"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="Blue Lagoon Drive from Reykjavík, the capital of Iceland,
+            to the southeast for about an houryou can reach Blue Lagoon, the famous"
+                android:textColor="@color/black" />
+
+            <RatingBar
+                android:id="@+id/rating_mountain_guide"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_guide"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/orange"
+                android:max="5"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:rating="4.5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/rating_count_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_guide"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/rating_mountain_guide"
+                android:fontFamily="@font/poppins_bold"
+                android:text="4.79"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

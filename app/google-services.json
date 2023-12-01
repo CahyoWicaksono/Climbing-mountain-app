@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217873958279",
+    "project_id": "mountain-climbing-app-5ddbe",
+    "storage_bucket": "mountain-climbing-app-5ddbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217873958279:android:65f6a03e193d21641b3f22",
+        "android_client_info": {
+          "package_name": "com.example.mountainclimbingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYATfOSRKd_c03ITWHO-cgYE_EliXpJYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

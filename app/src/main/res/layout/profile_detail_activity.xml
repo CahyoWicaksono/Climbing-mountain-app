@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_detail_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/matterhorn_switzerland">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/back_detail_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/place_name_detail_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/poppins"
+            android:text="Blue Mountains"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_name_detail_profile"
+            android:background="@drawable/bg_detail">
+
+            <TextView
+                android:id="@+id/title_mountain_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="About Mountain"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/desc_detail_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_mountain_profile"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="Blue Lagoon Drive from Reykjavík, the capital of Iceland,
+            to the southeast for about an houryou can reach Blue Lagoon, the famous"
+                android:textColor="@color/black" />
+
+            <RatingBar
+                android:id="@+id/rating_mountain_profile"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_profile"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/orange"
+                android:max="5"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:rating="4.5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/rating_count_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/rating_mountain_profile"
+                android:fontFamily="@font/poppins_bold"
+                android:text="4.79"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/date_profile_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="January,10,2021"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/RL_mountain_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/rating_mountain_profile"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/form1"
+                android:backgroundTint="@color/grey_5">
+
+                <ImageView
+                    android:id="@+id/flight"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_baseline_climbing" />
+
+                <TextView
+                    android:id="@+id/flight_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/flight"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Climbing Successful"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/flight"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-22dp"
+                    android:layout_toRightOf="@+id/flight"
+                    android:fontFamily="@font/poppins"
+                    android:text="Share your team"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_baseline_check_24" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

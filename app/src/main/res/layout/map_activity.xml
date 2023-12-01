@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/google_maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+    <RelativeLayout
+        android:id="@+id/RL_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/back_location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <Spinner
+            android:id="@+id/spiner_search"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/back_location"
+            android:background="@drawable/input_text"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:text="Search Destinations"
+            android:textColor="#62878F" />
+
+        <ImageView
+            android:id="@+id/find_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/spiner_search"
+            android:src="@drawable/touch" />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botomNavigationView_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:outlineSpotShadowColor="@color/black_20_percent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/tolbar" />
+
+</RelativeLayout>

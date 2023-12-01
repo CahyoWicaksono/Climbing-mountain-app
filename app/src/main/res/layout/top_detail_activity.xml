@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_detail_top"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mountain_3">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/place_name_detail_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/poppins"
+            android:text="Blue Mountains"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_name_detail_top"
+            android:background="@drawable/bg_detail">
+
+            <TextView
+                android:id="@+id/title_mountain_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="About Mountain"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/desc_detail_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_mountain_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="Blue Lagoon Drive from Reykjavík, the capital of Iceland,
+            to the southeast for about an houryou can reach Blue Lagoon, the famous"
+                android:textColor="@color/black" />
+
+            <RatingBar
+                android:id="@+id/rating_mountain_top"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/orange"
+                android:max="5"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:rating="4.5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/rating_count_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/rating_mountain_top"
+                android:fontFamily="@font/poppins_bold"
+                android:text="4.79"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/viewers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/rating_count_top"
+                android:fontFamily="@font/poppins"
+                android:text="(79 Viewers)"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/see_aall_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_detail_top"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="See all viewers"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pricing_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_mountain_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Pricing"
+                android:textColor="@color/black"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/RL_mountain_1_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pricing_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/form1"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/flight"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_airplane" />
+
+                <TextView
+                    android:id="@+id/flight_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/flight"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Flights"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/flight"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-22dp"
+                    android:layout_toRightOf="@+id/flight"
+                    android:fontFamily="@font/poppins"
+                    android:text="Book plane tickets now"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_baseline_arrow_kanan"
+                    app:tint="@color/goose_gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_mountain_2_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL_mountain_1_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/form1"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/hottel"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_hotel" />
+
+                <TextView
+                    android:id="@+id/hottel_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/hottel"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Best Hotel"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/cost_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hottel_id"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/hottel"
+                    android:fontFamily="@font/poppins"
+                    android:text="$500/Night"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_baseline_arrow_kanan"
+                    app:tint="@color/goose_gray" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL_mountain_2_top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/blue_light"
+                android:fontFamily="@font/poppins"
+                android:text="Plan Trip"
+                android:textColor="@color/white"
+                android:id="@+id/plan_trip_top"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_planning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/grey_5"
+        android:onClick="setback"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Travel Plan"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="6dp"
+        android:layout_below="@id/textView_text"
+        app:cardCornerRadius="10dp">
+
+
+   <ImageView
+       android:id="@+id/image"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:background="@drawable/mountain_1">
+   </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/mountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mount Pilatus"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/mountain2"
+                android:layout_below="@id/mountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switzerland"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/mountain3"
+                android:layout_below="@id/mountain"
+                android:layout_toRightOf="@id/mountain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elevation : 2,128.5 m (6,983 ft)"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <CalendarView
+        android:id="@+id/custom_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/planning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_calendar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Planning"
+        android:textColor="@color/black"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/AddPlanning"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/form13"
+        android:backgroundTint="@color/blue_light"
+        android:layout_below="@id/list_planning"
+        android:layout_centerHorizontal="true"
+        android:text="Add Planning"
+        android:textAllCaps="false"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="15dp"
+        android:textColor="@color/white">
+
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_planning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/planning"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        tools:listitem="@layout/card_planning">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

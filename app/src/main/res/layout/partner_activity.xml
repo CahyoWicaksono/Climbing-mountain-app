@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Your Partner"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user1"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/pp1"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="5dp"
+               android:src="@drawable/profile"></de.hdodenhof.circleimageview.CircleImageView>
+
+           <TextView
+               android:id="@+id/text1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="15dp"
+               android:layout_toRightOf="@id/pp1"
+               android:fontFamily="@font/poppins_bold"
+               android:text="Alonlove"
+               android:textColor="@color/black"
+               android:textSize="15dp"></TextView>
+
+           <TextView
+               android:id="@+id/jobs1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/pp1"
+               android:layout_below="@id/text1"
+               android:text="Travel Blogger"
+               android:layout_marginStart="10dp"
+               android:fontFamily="@font/poppins"
+               android:textSize="15dp">
+           </TextView>
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="20dp"
+               android:backgroundTint="@color/grey_5"
+               android:onClick="setback"
+               android:padding="10dp"
+               android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user2"
+        android:layout_below="@id/user1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pp2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/profile2"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/pp2"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Charlotte"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/pp2"
+                android:fontFamily="@font/poppins"
+                android:text="Chief Travel Experiencer"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/grey_5"
+                android:onClick="setback"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user3"
+        android:layout_below="@id/user2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pp3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/profile3"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/pp3"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Evageline"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/pp3"
+                android:fontFamily="@font/poppins"
+                android:text="Chief Travel Experiencer"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/grey_5"
+                android:onClick="setback"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user4"
+        android:layout_below="@id/user3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pp4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/profile4"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/pp4"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Geraldine"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/pp4"
+                android:fontFamily="@font/poppins"
+                android:text="Private Tour Guides"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/grey_5"
+                android:onClick="setback"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user5"
+        android:layout_below="@id/user4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pp5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/profile5"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/pp5"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Prudence"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text6"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/pp5"
+                android:fontFamily="@font/poppins"
+                android:text="Tour Youtube Master"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/grey_5"
+                android:onClick="setback"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
